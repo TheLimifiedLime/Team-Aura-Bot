@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A custom bot for a server named Team Aura",
   "scripts": {
+    "develop": "tsc --watch",
     "start": "node dist/index.js"
   },
   "repository": {
