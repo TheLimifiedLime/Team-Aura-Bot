@@ -1,4 +1,20 @@
 {
+  "name": "team-aura-bot",
+  "version": "1.0.0",
+  "description": "A custom bot for a server named Team Aura",
+  "scripts": {
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLimifiedLime/Team-Aura-Bot.git"
+  },
+  "author": "Issai H",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheLimifiedLime/Team-Aura-Bot/issues"
+  },
+  "homepage": "https://github.com/TheLimifiedLime/Team-Aura-Bot#readme",
   "dependencies": {
     "bufferutil": "^4.0.3",
     "chalk": "^4.1.1",
