@@ -4,7 +4,8 @@
   "description": "A custom bot for a server named Team Aura",
   "scripts": {
     "develop": "tsc --watch",
-    "start": "node dist/index.js"
+    "build": "tsc",
+    "start": "node -r dotenv/config dist/index.js"
   },
   "repository": {
     "type": "git",
