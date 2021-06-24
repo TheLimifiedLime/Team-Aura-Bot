@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import { log } from "./functions/logger.js"
 import { ShardingManager } from "discord.js";
 // Create a new ShardingManager
 const manager = new ShardingManager("./dist/bot.js", {
@@ -9,5 +9,5 @@ const manager = new ShardingManager("./dist/bot.js", {
 manager.spawn()
 
 manager.on("shardCreate", (shard) => {
-    console.log(chalk.greenBright("SHARD"), `Shard #${shard.id} Launched`);
+    log(`Shard #${shard.id} Launched`, "shard")
 })
