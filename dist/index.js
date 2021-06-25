@@ -10,4 +10,13 @@ var manager = new discord_js_1.ShardingManager("./dist/bot.js", {
 manager.spawn();
 manager.on("shardCreate", function (shard) {
     logger_js_1.log("Shard #" + shard.id + " Launched", "shard");
+    shard.on("death", function () {
+        logger_js_1.log("Shard #{shard.id} died", "error");
+    });
+    shard.on("error", function (error) {
+        logger_js_1.log("Shard #" + shard.id + " experienced an error", "error");
+    });
+    shard.on("disconnect", function () {
+        logger_js_1.log("Shard #" + shard.id + " was disconnected", "error");
+    });
 });
