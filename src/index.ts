@@ -9,5 +9,5 @@ const manager = new ShardingManager("./dist/bot.js", {
 manager.spawn()
 
 manager.on("shardCreate", (shard) => {
-    log(`Shard #${shard.id} Launched`, "shard")
+  log(`Shard #${shard.id} Launched`, "shard")
 })
