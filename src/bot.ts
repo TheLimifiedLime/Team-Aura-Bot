@@ -1,7 +1,7 @@
-import { CommandoClient } from "discord.js-commando";
-import config from "./config.json";
-import { log } from "./functions/logger.js"
-const bot = new CommandoClient({
+const { Client } = require("discord.js")
+const config = require("./config.json");
+const { log } = require("./functions/logger.js")
+const bot = new Client({
   commandPrefix: config.prefix,
   owner: config.ownerIDS,
 });
