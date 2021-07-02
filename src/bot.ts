@@ -1,10 +1,10 @@
-const { Client } = require("discord.js")
-const config = require("./config.json");
-const { log } = require("./functions/logger.js")
+import { Client } from "discord.js"
+import config from "./config.json"
+import { log } from "./functions/logger"
 const bot = new Client()
 
 bot.on('ready', async () => {
-  log(`Logged in as ${bot.user.tag}`)
+  log(`Logged in as ${bot.user?.tag}`, "success")
 })
 
 bot.login()

@@ -35,13 +35,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var Client = require("discord.js").Client;
-var config = require("./config.json");
-var log = require("./functions/logger.js").log;
-var bot = new Client();
+Object.defineProperty(exports, "__esModule", { value: true });
+var discord_js_1 = require("discord.js");
+var logger_1 = require("./functions/logger");
+var bot = new discord_js_1.Client();
 bot.on('ready', function () { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        log("Logged in as " + bot.user.tag);
+    var _a;
+    return __generator(this, function (_b) {
+        logger_1.log("Logged in as " + ((_a = bot.user) === null || _a === void 0 ? void 0 : _a.tag), "success");
         return [2 /*return*/];
     });
 }); });
