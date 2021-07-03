@@ -1,0 +1,5 @@
+tasks:
+  - name: Setup
+    init: npm install
+  - name: Typescript Compiler
+    command: npm run build:watch
