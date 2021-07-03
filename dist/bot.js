@@ -38,6 +38,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var discord_js_1 = require("discord.js");
 var logger_1 = require("./functions/logger");
+var config = {
+    defaultOwnerIDS: ["738966191519039640"],
+    defaultPrefixes: [""],
+    defaultColors: {
+        main: "cb9ae2",
+        warn: "f78c6c",
+        error: "fd6868",
+    },
+};
 var bot = new discord_js_1.Client();
 bot.on('ready', function () { return __awaiter(void 0, void 0, void 0, function () {
     var _a;
